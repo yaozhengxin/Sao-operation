@@ -15,3 +15,5 @@
   * https://www.nuist.today/ejIjWE/#%E9%80%9A%E7%94%A8%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8
 * 再次简单明了总结flex布局，一看就懂...
   * https://juejin.im/post/5c74935c6fb9a049fc042bd6?utm_source=gold_browser_extension
+* 11 个最好的 JavaScript 动态效果库
+  * https://juejin.im/post/5c99fc09e51d452db858dae4
