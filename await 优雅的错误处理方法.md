@@ -136,15 +136,17 @@
     // 抽离成公共方法
     const awaitWrap = (promise) => {
         return promise
-            .then(data => [null, data])
-            .catch(err => [err, null])
+            .then(data => [null, data, true])
+            .catch(err => [err, null, true])
     }
 
-    const [err, data] = await awaitWrap(fetchData())
+    const [err, data , finallyStatus] = await awaitWrap(fetchData())
     console.log('err', err)
     console.log('data', data)
+    console.log('finallyStatus', finallyStatus)
     // err null
     // data fetch data is me
+    // finallyStatus true
 })()
 ```
 * 将对 await 处理的方法抽离成公共的方法，在使用 await 调用 awaitWrap 这样的方法是不是更优雅了呢。如果使用 typescript 实现大概是这个样子
