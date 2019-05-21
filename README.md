@@ -22,3 +22,6 @@
 * A smooth 3D tilt javascript library forked from Tilt.js,视差滚动效果
   * https://micku7zu.github.io/vanilla-tilt.js/
   * https://perspective.js.org/#/zh-cn/
+
+* 浏览器html添加不同颜色的outline
+  * [].forEach.call($$("*"),function(a){ a.style.outline="1px solid #"+(~~(Math.random()*(1<<24))).toString(16) })
